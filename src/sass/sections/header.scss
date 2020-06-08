@@ -1,0 +1,134 @@
+.header {
+  background-image: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.9) 0,
+      rgba(243, 129, 129, 0.9)),
+    url(../images/eagle.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid #ffffff;
+    padding: 7px 30px 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    background-color: unset;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffffff;
+      transition: 0.9s;
+      color: #edd58a;
+    }
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(0deg,
+        rgba(252, 227, 138, 0.9) 0,
+        rgba(243, 129, 129, 0.9)),
+      url(../images/eagle@2x.jpg);
+  }
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 164px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    font-family: $ffmn;
+
+    &:hover {
+      color: #fce38a;
+      transition: 0.4s linear;
+    }
+  }
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.logotype,
+.nav-list__item,
+.header__btn {
+  color: $col-w;
+}
+
+.logotype {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.nav-list__item {
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-list__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -12px;
+  transition: 0.4s linear;
+}
+
+.nav-list__link:hover:before {
+  background: #fce38a;
+}
+
+.nav-btn {
+  background-color: inherit;
+  border: none;
+}
+
+.nav-icon {
+  fill: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+
+.nav-icon:hover {
+  fill: #fce38a;
+  transform: scale(2);
+  cursor: pointer;
+  transition: 0.6s linear;
+}
+
+.header__content {
+  max-width: 810px;
+  margin: 0 auto;
+}
+
+.header__subtitle {
+  font-size: 72px;
+  font-family: $ffks;
+  color: $col-w;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.header__title {
+  font-size: 148px;
+  font-family: $ffmn;
+  color: $col-w;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.933;
+  text-align: center;
+  margin-bottom: 126px;
+}

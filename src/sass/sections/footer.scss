@@ -1,0 +1,104 @@
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-content {
+  font-size: 14px;
+  font-family: $ffmn;
+  color: $col-g;
+  text-align: center;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.footer-link {
+  display: inline;
+  color: #f38181;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+input {
+  max-width: 230px;
+  padding: 14px;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  color: rgb(156, 153, 153);
+  font-family: $ffrb;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input::-webkit-input-placeholder {
+  color: #cccccc;
+  font-family: $ffrb;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input::-moz-placeholder {
+  color: #cccccc;
+  font-family: $ffrb;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input:-ms-input-placeholder {
+  color: #cccccc;
+  font-family: $ffrb;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input::-ms-input-placeholder {
+  color: #cccccc;
+  font-family: $ffrb;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input::placeholder {
+  color: #cccccc;
+  font-family: $ffrb;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contact-form__btn {
+  padding: 14px 33px;
+  border: none;
+  background-color: #95e1d3;
+  color: $col-w;
+  font-family: $ffmn;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
